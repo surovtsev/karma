@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="GrailsWeb">
+      <configuration>
+        <webroots>
+          <root url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/database-migration-1.1/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/jquery-1.7.2/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/fields-1.3/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/twitter-bootstrap-2.0.4/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0/grails-app/views" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="Gorm" />
+          <unit-entry name="sessionFactory" />
+        </datasource-map>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/database-migration-1.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/database-migration-1.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/database-migration-1.1/grails-app/controllers" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/fields-1.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/fields-1.3/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/fields-1.3/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/fields-1.3/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/hibernate-2.1.0">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/hibernate-2.1.0/grails-app/i18n" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/joda-time-1.3.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/joda-time-1.3.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/joda-time-1.3.1/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/jquery-1.7.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/jquery-1.7.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/jquery-1.7.2/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/jquery-1.7.2/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/jquery-1.7.2/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/mail-1.0/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/resources-1.2-RC1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/resources-1.2-RC1/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/resources-1.2-RC1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/resources-1.2-RC1/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/resources-1.2-RC1/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/spring-security-core-1.2.7.3">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/spring-security-core-1.2.7.3/src/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/spring-security-core-1.2.7.3/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/spring-security-core-1.2.7.3/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/spring-security-core-1.2.7.3/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/spring-security-core-1.2.7.3/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/tomcat-2.1.0" />
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/twitter-bootstrap-2.0.4">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/twitter-bootstrap-2.0.4/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/twitter-bootstrap-2.0.4/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/webxml-1.4.1">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.0/projects/karma/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.1.0" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.1.0" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="Grails User Library (karma-grailsPlugins)">
+        <CLASSES>
+          <root url="jar://D:/install/.ivy2/joda-time/joda-time/jars/joda-time-2.0.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.jadira.usertype/usertype.spi/jars/usertype.spi-1.9.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.jadira.usertype/usertype.jodatime/jars/usertype.jodatime-1.9.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.liquibase/liquibase-core/jars/liquibase-core-2.0.5.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.jodd/jodd/jars/jodd-3.3.4.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar!/" />
+          <root url="jar://D:/install/.ivy2/asm/asm/jars/asm-3.2.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.jodd/jodd-wot/jars/jodd-wot-3.3.4.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.springframework.security/spring-security-web/jars/spring-security-web-3.0.7.RELEASE.jar!/" />
+          <root url="jar://D:/install/.ivy2/org.springframework.security/spring-security-core/jars/spring-security-core-3.0.7.RELEASE.jar!/" />
+          <root url="jar://D:/install/.ivy2/postgresql/postgresql/jars/postgresql-9.0-801.jdbc4.jar!/" />
+          <root url="jar://D:/install/.ivy2/javax.activation/activation/jars/activation-1.1.jar!/" />
+          <root url="jar://D:/install/.ivy2/javax.mail/mail/jars/mail-1.4.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+
