@@ -40,7 +40,7 @@ abstract class AbstractAnnounce {
     Double karma=0
     static constraints = {
         name(blank: false)
-        description(type:'text', display:false)
+        description(type:'text', display:false, nullable: true)
         karma(display:false)
         author(display:false,nullable: true)
         announceType(display:false,nullable: true)
