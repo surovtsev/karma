@@ -9,6 +9,7 @@ abstract class AbstractAnnounce {
 
     User author
     String name
+    String description
     Date dateCreated
     Date lastUpdated
     enum AnnounceType {
@@ -39,6 +40,7 @@ abstract class AbstractAnnounce {
     Double karma=0
     static constraints = {
         name(blank: false)
+        description(type:'text', display:false)
         karma(display:false)
         author(display:false,nullable: true)
         announceType(display:false,nullable: true)
