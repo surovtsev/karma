@@ -1,9 +1,8 @@
 package ru.sggr.karma
 
-import org.springframework.dao.DataIntegrityViolationException
-import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 import grails.plugins.springsecurity.Secured
-
+import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+import org.springframework.dao.DataIntegrityViolationException
 
 class UserController {
 
@@ -37,6 +36,7 @@ class UserController {
                 query.list(),
                 userInstanceTotal: query.count()]
     }
+
     @Secured(['ROLE_ADMIN'])
     def index() {
         redirect(action: "list", params: params)
@@ -78,7 +78,16 @@ class UserController {
             return
         }
 
-        [userInstance: userInstance]
+        def max = Math.min(params.max ? params.int('max') : 20, 100)
+        def sortField = params.sort ? params.sort : 'dateCreated'
+        def sortOrder = params.order ? params.order : 'desc'
+        def history = KarmaHistory.where {
+            eq 'user.id', userInstance.id
+        }
+        // count must be queried before max and sort calls
+        def count = history.count()
+        final list = history.max(max).sort(sortField, sortOrder).list()
+        [userInstance: userInstance, karmaHistory: list, karmaHistoryTotal: count]
     }
 
     @Secured(['ROLE_ADMIN'])
@@ -150,6 +159,7 @@ class UserController {
             }
         }
     }
+
     @Secured(['ROLE_USER'])
     def profile() {
         def userInstance = User.get(springSecurityService.principal.id)
@@ -161,6 +171,7 @@ class UserController {
 
         [userInstance: userInstance]
     }
+
     @Secured(['ROLE_USER'])
     def updateProfile() {
         def userInstance = User.get(springSecurityService.principal.id)
