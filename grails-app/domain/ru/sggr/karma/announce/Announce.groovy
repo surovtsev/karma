@@ -5,7 +5,8 @@ package ru.sggr.karma.announce
 class Announce extends AbstractAnnounce {
 
     static constraints = {
-        name widget:'textarea'
+//        name widget:'textarea'
+        description(widget:'textarea', display:true)
     }
     def beforeInsert() {
         super.beforeInsert()

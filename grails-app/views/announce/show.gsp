@@ -49,6 +49,12 @@
 
             </g:if>
 
+            <g:if test="${announceInstance?.description}">
+                <dt><g:message code="announce.description.label" default="Description"/></dt>
+
+                <dd><g:fieldValue bean="${announceInstance}" field="description"/></dd>
+
+            </g:if>
             <g:if test="${announceInstance?.karma}">
                 <dt><g:message code="announce.karma.label" default="Karma"/></dt>
 

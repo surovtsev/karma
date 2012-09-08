@@ -9,8 +9,8 @@
 
 <body>
 <div class="row-fluid">
-    <sec:ifAnyGranted roles="ROLE_ADMIN">
-        <div class="span3">
+    <div class="span3">
+        <sec:ifAnyGranted roles="ROLE_ADMIN">
             <div class="well">
                 <ul class="nav nav-list">
                     <li class="nav-header">${entityName}</li>
@@ -28,12 +28,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </sec:ifAnyGranted>
-    <div class="span9">
+        </sec:ifAnyGranted>
 
         <div class="page-header">
-            <h1><g:message code="default.show.label" args="[entityName]"/></h1>
+            <h1><g:message code="user.label" args="[entityName]"/></h1>
         </div>
 
         <g:if test="${flash.message}">
@@ -63,7 +61,8 @@
 
             <dd><g:fieldValue bean="${userInstance}" field="karma"/>
             <sec:ifAnyGranted roles="ROLE_ADMIN">
-                <g:link controller="karmaHistory" action="create" params="['user.id': userInstance?.id]"><g:message code="default.change.label"/> </g:link>
+                <g:link controller="karmaHistory" action="create" params="['user.id': userInstance?.id]"><g:message
+                        code="default.change.label"/></g:link>
             </sec:ifAnyGranted>
             </dd>
 
@@ -127,6 +126,66 @@
                 </div>
             </g:form>
         </sec:ifAnyGranted>
+    </div>
+
+    <div class="span9">
+        <div class="page-header">
+            <h1><g:message code="user.karmaHistory" default="KarmaHistory"/></h1>
+        </div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <sec:ifAnyGranted roles="ROLE_ADMIN">
+                    <th></th>
+                </sec:ifAnyGranted>
+
+                <g:sortableColumn property="dateCreated"
+                                  title="${message(code: 'user.karmaHistory.dateCreated.label', default: 'Date Created')}"/>
+
+                <th class="header"><g:message code="user.karmaHistory.announce.label" default="Announce"/></th>
+
+                <th class="header"><g:message code="user.karmaHistory.author.label" default="Author"/></th>
+
+                <g:sortableColumn property="karmaChange"
+                                  title="${message(code: 'user.karmaHistory.karmaChange.label', default: 'Karma Change')}"/>
+
+            </tr>
+            </thead>
+            <tbody>
+            <g:each in="${karmaHistory}" var="historyEntry">
+
+                <tr>
+                    <sec:ifAnyGranted roles="ROLE_ADMIN">
+                        <td class="link">
+                            <g:link controller="karmaHistory" action="show" id="${historyEntry.id}"
+                                    class="btn btn-small"><g:message
+                                    code="default.show.label"/> &raquo;</g:link>
+                        </td>
+                    </sec:ifAnyGranted>
+
+                    <td><g:formatDate date="${historyEntry.dateCreated}"/></td>
+
+                    <td>${fieldValue(bean: historyEntry, field: "announce")}</td>
+
+                    <td>${fieldValue(bean: historyEntry, field: "author")}</td>
+
+                    <td>
+                        <g:if test="${(fieldValue(bean: historyEntry, field: "karmaChange") as Long) > 0}">
+                            +${fieldValue(bean: historyEntry, field: "karmaChange")}
+                        </g:if>
+                        <g:else>
+                            ${fieldValue(bean: historyEntry, field: "karmaChange")}
+                        </g:else>
+                    </td>
+
+                </tr>
+            </g:each>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <bootstrap:paginate total="${karmaHistoryTotal}"/>
+        </div>
     </div>
 
 </div>

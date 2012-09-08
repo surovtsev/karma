@@ -55,7 +55,8 @@
         <fieldset>
             <g:form class="form-horizontal" action="create">
                 <fieldset>
-                    <f:all bean="announceInstance"/>
+                    <f:field bean="announceInstance" property="name" input-class="input-xxlarge" />
+                    <f:field bean="announceInstance" property="description" input-class="input-xxlarge" input-rows="8"/>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">
                             <i class="icon-ok icon-white"></i>
