@@ -1,1 +1,3 @@
+Karma system is written on Grails framework (spring security,hibernate) with twitter bootstrap css.
+
 Приложение для внутрикорпоративного учета "кармы" сотрудников. Поощеряет добавление статей вики, и помощь другим разработчикам.
